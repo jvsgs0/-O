@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da forca</title>
+
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="game.css">
+
+</head>
+<body>
+    <h4 style="color:snow;" id="player1Nome"></h4> <span id="player1pontos"></span>
+    <br>
+    <h4 style="color:snow;" id="player2Nome"></h4> <span id="player2pontos"></span>
+
+    <div class="container">
+        <center>
+            <h2 style="color: rgb(0, 255, 221);">Jogo da forca</h2>
+            <h3 style="color:aquamarine;" id="playerQuestionador"></h3>
+            <h3 style="color:aquamarine;" id="playerRespondedor"></h3>
+            <div id="output" class="col-lg-6"> </div>
+            <br>
+            <br>
+            <label>Envie sua Palavra:<b style="color: aquamarine">Utilize uma palavra com 5 ou mais letras
+            </b>
+            </label>
+            <input type="text" id="word" class="form-control" placeholder="Palavra">
+            <br>
+            <button onclick="send();" class="btn btn-success" style="width: 30%;">Enviar</button>
+        </center>
+    </div>
+
+    <script src="game_login.js"></script>
+</body>
+</html>
